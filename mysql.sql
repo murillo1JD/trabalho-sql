@@ -24,3 +24,6 @@ insert into conquistas (conquistas_id, jogador_id, descricao, data_conquista) va
 (103, 2, 'desbloqueou skin rara', '2025-09-05');
 
 -- query
+select jogadores.nome, jogadores.gamertag, conquistas.descricao, conquistas.data_conquista
+from jogadores
+inner join conquistas on jogadores.jogador_id = conquistas.jogador_id;
